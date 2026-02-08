@@ -3,39 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Birthday</title>
+    <title>Birthday Wrapped</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="memory-slides">
-        <!-- Memory Slide 1 -->
-        <div class="slide">Slide 1 Content</div>
-        
-        <!-- Memory Slide 2 -->
-        <div class="slide">Slide 2 Content</div>
-        
-        <!-- Memory Slide 3 -->
-        <div class="slide">Slide 3 Content</div>
-        
-        <!-- Memory Slide 4 -->
-        <div class="slide">Slide 4 Content</div>
-        
-        <!-- Memory Slide 5 -->
-        <div class="slide">Slide 5 Content</div>
-        
-        <!-- Video -->
-        <div class="video">Video Content</div>
+    <div class="wrapper">
+        <header>
+            <h1>Happy Birthday!</h1>
+        </header>
+        <div class="slider">
+            <div class="slide">
+                <img src="memory1.jpg" alt="Memory 1">
+            </div>
+            <div class="slide">
+                <img src="memory2.jpg" alt="Memory 2">
+            </div>
+            <div class="slide">
+                <img src="memory3.jpg" alt="Memory 3">
+            </div>
+            <div class="slide">
+                <img src="memory4.jpg" alt="Memory 4">
+            </div>
+            <div class="slide">
+                <img src="memory5.jpg" alt="Memory 5">
+            </div>
+            <div class="slide">
+                <video controls>
+                    <source src="birthday-video.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </div>
+        <div class="slide-dots">
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+        </div>
     </div>
-    
-    <div class="dot-indicators">
-        <span class="dot" onclick="currentSlide(1)"></span>
-        <span class="dot" onclick="currentSlide(2)"></span>
-        <span class="dot" onclick="currentSlide(3)"></span>
-        <span class="dot" onclick="currentSlide(4)"></span>
-        <span class="dot" onclick="currentSlide(5)"></span>
-        <span class="dot" onclick="currentSlide(6)"></span>
-    </div>
-
     <script src="script.js"></script>
 </body>
 </html>
